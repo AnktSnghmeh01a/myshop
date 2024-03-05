@@ -33,7 +33,7 @@ const Cart = () => {
             <div className="continue-shopping-div">
               <button className="continue-shopping-button"  onClick={() => {
         
-              navigate("/home");
+              navigate("/");
             }}>Continue Shopping</button>
             </div>
 

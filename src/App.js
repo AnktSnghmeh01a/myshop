@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <div style={{ paddingTop: "7em" }}>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/clothing" element={<Clothing />} />
             <Route path="/electronics" element={<Electronics />} />
             <Route path="/cart" element={<Cart />} />
