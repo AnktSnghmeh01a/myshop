@@ -1,6 +1,5 @@
-import { useState, useContext, createContext } from "react";
+import { useState,createContext } from "react";
 import { clothingProducts, electronicsProducts } from "../PRODUCT";
-import Product from "../components/product/Product";
 
 const finalLength = clothingProducts.length + electronicsProducts.length;
 

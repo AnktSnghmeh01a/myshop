@@ -27,7 +27,7 @@ const Cart = () => {
             
             <div className="empty-cart-image">
       
-                <img src={emptycardImage} alt="no-image" />
+                <img src={emptycardImage} alt="emptycard" />
             </div>
          
             <div className="continue-shopping-div">
@@ -45,7 +45,9 @@ const Cart = () => {
           if (cartItems[product.id] !== 0) {
             return <CartItems data={product} key={product.id} />;
           }
+          return null; // Add a default return value
         })}
+
       </div>
 
       <div className="right-cart">

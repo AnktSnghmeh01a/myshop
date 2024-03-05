@@ -9,7 +9,6 @@ const CartItems = (props) => {
     addTocart,
     removeFromCart,
     updateCartItemAmount,
-    getTotalCartAmount,
   } = useContext(ShopContext);
   return (
     <div className="cart-items">

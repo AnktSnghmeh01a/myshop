@@ -123,7 +123,7 @@ export const clothingProducts =
 {
   id:10,
   productName:'Men Fancy hoodie',
-  productImage:clothingImg9,
+  productImage:clothingImg10,
   productPrice:799 ,
 }
 ,
