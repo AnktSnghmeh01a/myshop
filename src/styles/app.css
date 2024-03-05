@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 4em;
+  padding: 1em;
+}
+h1{
+  font-weight: 200;
+}
+.electronics-part,.clothes-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+}
+.clothes-part{
+  background-color: #F7F7F7;
+  padding: 1.5em 0;
+}
+

@@ -1,0 +1,160 @@
+/* applying media query for header */
+
+@media screen and (max-width: 984px){
+  
+  .navbar{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5em;
+    color: #000;
+    gap: 1.5vw;
+
+  }
+  
+  .logo h2{
+    font-weight: 200;
+    font-size: 1em;
+  }
+  
+  
+  .links-part{
+  
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .left-links{
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+  }
+  .links-part a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+  }
+  
+  .home{
+    border: 1px solid black;
+    padding: 0.2em 0.8em;
+    border-radius: 2em;
+  }
+  
+  .cart-icon{
+    font-size: 1.5em;
+  }
+  
+/* ======================================= */
+/* ======================================= */
+/* Styling the cart portion */
+
+.cart {
+   flex-direction: column;
+   width: 100%;
+}
+.left-cart {
+  width: 100% !important;
+}
+.cart-items{
+  flex-direction: column;
+  gap: 1em;
+}
+.right-cart {
+  width: 100% !important;
+  position: static !important;
+  right: auto !important;
+}
+
+.goto-checkout-button{
+
+ width: 100% !important;
+}
+
+}
+
+
+/* For smaller devices , show the hamburger icon  */
+@media screen and (max-width: 600px){
+  
+  .menu-icon-div{
+   margin-right: 1em;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+  }
+  .menu-icon{
+    display:block;
+    opacity: 1;
+    pointer-events:all;
+    font-size: 1.5em;
+
+  }
+  /* when click on navbar */
+  .openMenu-icon{
+   position: absolute;
+   top: 1em;
+   right:1em;
+   font-size: 1.5em;
+  }
+
+  .left-links{
+    display: none;
+  }
+ 
+  /* When the menu is open , change the styles of the navber */
+  .menuOpenleft-links{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 2em;    
+  }
+
+  .menuOpenleft-links a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    position: relative;
+  }
+  /* transition of the links */
+.menuOpenleft-links a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s ease-in-out;
+}
+.menuOpenleft-links a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+  .hideMenu{
+    display: none;
+  }
+  .menuOpen-navbar{
+     height: 100vh;
+     align-items: flex-start;
+     padding: 1em;
+     overflow-x: hidden;
+     position: fixed;
+     top: 0;
+     background-color: #fff;
+     width: 100%;
+     z-index: 100;
+    }
+
+}
