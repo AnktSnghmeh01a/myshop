@@ -20,6 +20,7 @@ Looking for a seamless shopping experience? Dive into MyShop, a simple yet power
 🔢 Update the quantity of items in your cart on the fly.  
 💰 View the total amount of products in your cart.  
 ➕ Increase or decrease the quantity of products in your cart with ease.
+
 🎇 A responsive design. Regardless of the device being used, whether it's a desktop, tablet, or mobile phone, the layout and functionality adapt effortlessly to ensure a consistent and user-friendly experience across all screen sizes.
 
 ### Installation:
